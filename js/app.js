@@ -59,7 +59,7 @@ handleChange = (data) => {
     updatePlotsAndDemographics(data, id)
 }
 
-d3.json("../data/samples.json").then(data => {
+d3.json("data/samples.json").then(data => {
     // console.log(data.metadata);
     let mySelect = d3.select("#selDataset");
     data.names.forEach(element => {
